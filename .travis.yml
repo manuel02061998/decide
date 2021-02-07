@@ -20,17 +20,10 @@ script:
 - coverage xml
 - python-codacy-coverage -r coverage.xml
 deploy:
-  - provider: heroku
-    app: egc-app-decide-ci-manrubben
-    strategy: git
-    api_key:
-      secure: TtzcmjmDn3NcdyXGkNgF+jrVy+V9WI8ItnEFf1QYIGVSJ+8hDdS7xcL3SXTh7b8FZucZiVF2F7jsT92Lt0ddx9YPuNpUoKXdXGLFvwiOUQpFrkduWTAMYCSjdC/BllCdc4EpxWl0SnjwatfTDP/RPbP9ufVM9pY4MiQun+jTdP9gp+8tfkUVGBj3n0hChhaV9y3EUNZcMiyEQgDb6G+VAylRIcju9qdoNm3QB8kn1UjNZ9mXaJATFnCiq7DbXdqad6zpOPpup4QU8k4JG+H4UJMvBgOH0hbooPFdXIndehPZxr8vI3zqo+PemadftXeAa7zvSR2GwKVTHWCD7t+y51GMxZS/oCscVBjK8gT616MPHXQAesHZWPs7FYEVrmUfVIb5MP34BrgBwSdS/vyVDudf0tDXD/jPonFaJYhCnuIaixhMj5/glhH1Ou+L4mecH4ChVerNPTgwDmzoYikQdxaRoR89g39eFg5DcA+p5bxPr+c6EEXzQCEeDiXfN/jP2nK7YF+BnbvmYWDaJIRwMNogye/szAnGisPiubX48impg0iy6UXZW55uvtyjZTyy3eE9A/AQ4Pnx2xiShB0/c7qD8YJlfZ+GifhCeKptIrbmmw2xKZfkDXomLdJNSaArB9oR6SAmjweYx5LRKiEgLNm156fKLyk3rgYls0A0glI=
-    on:
-      branch: master
-  - provider: heroku
-    app: egc-app-decide-ci-pre-manrubbe
-    strategy: git
-    api_key:
-      secure: TtzcmjmDn3NcdyXGkNgF+jrVy+V9WI8ItnEFf1QYIGVSJ+8hDdS7xcL3SXTh7b8FZ>
-    on:
-      branch: ejercicio2
+  provider: heroku
+  app: egc-app-decide-ci-manrubben
+  strategy: git
+  api_key:
+    secure: TtzcmjmDn3NcdyXGkNgF+jrVy+V9WI8ItnEFf1QYIGVSJ+8hDdS7xcL3SXTh7b8FZucZiVF2F7jsT92Lt0ddx9YPuNpUoKXdXGLFvwiOUQpFrkduWTAMYCSjdC/BllCdc4EpxWl0SnjwatfTDP/RPbP9ufVM9pY4MiQun+jTdP9gp+8tfkUVGBj3n0hChhaV9y3EUNZcMiyEQgDb6G+VAylRIcju9qdoNm3QB8kn1UjNZ9mXaJATFnCiq7DbXdqad6zpOPpup4QU8k4JG+H4UJMvBgOH0hbooPFdXIndehPZxr8vI3zqo+PemadftXeAa7zvSR2GwKVTHWCD7t+y51GMxZS/oCscVBjK8gT616MPHXQAesHZWPs7FYEVrmUfVIb5MP34BrgBwSdS/vyVDudf0tDXD/jPonFaJYhCnuIaixhMj5/glhH1Ou+L4mecH4ChVerNPTgwDmzoYikQdxaRoR89g39eFg5DcA+p5bxPr+c6EEXzQCEeDiXfN/jP2nK7YF+BnbvmYWDaJIRwMNogye/szAnGisPiubX48impg0iy6UXZW55uvtyjZTyy3eE9A/AQ4Pnx2xiShB0/c7qD8YJlfZ+GifhCeKptIrbmmw2xKZfkDXomLdJNSaArB9oR6SAmjweYx5LRKiEgLNm156fKLyk3rgYls0A0glI=
+  on:
+    branch: master
