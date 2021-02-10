@@ -2,6 +2,8 @@
 
 CAMBIO EN LA RAMA PRACTICA3, donde vamos a hacer un pull request
 
+CAMBIO PARA PROBAR EL EJERCICIO 2
+
 Plataforma voto electrónico educativa
 =====================================
 
